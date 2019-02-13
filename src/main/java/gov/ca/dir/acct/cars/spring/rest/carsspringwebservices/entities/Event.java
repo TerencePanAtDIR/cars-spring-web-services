@@ -225,4 +225,24 @@ public class Event {
                 ", modifiedDate=" + modifiedDate +
                 '}';
     }
+
+    public Event(){
+
+    }
+
+    public Event(Long eventId, EventType eventType, Long arStatusId, LocalDateTime eventDate, String rootDocument, String currentDocument, String referenceDocument, String additionalReference, String dataSourceCode, String createdBy, LocalDateTime createdDate, String modifiedBy, LocalDateTime modifiedDate) {
+        this.eventId = eventId;
+        this.eventType = eventType;
+        this.arStatusId = arStatusId;
+        this.eventDate = eventDate;
+        this.rootDocument = rootDocument;
+        this.currentDocument = currentDocument;
+        this.referenceDocument = referenceDocument;
+        this.additionalReference = additionalReference;
+        this.dataSourceCode = dataSourceCode;
+        this.createdBy = createdBy;
+        this.createdDate = createdDate;
+        this.modifiedBy = modifiedBy;
+        this.modifiedDate = modifiedDate;
+    }
 }

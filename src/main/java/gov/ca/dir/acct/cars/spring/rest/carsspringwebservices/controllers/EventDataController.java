@@ -34,7 +34,7 @@ public class EventDataController {
 
     @GetMapping("/findByEventId/{eventId}")
     public @ResponseBody
-    List<Event> getEventsByEventId(@PathVariable Long eventId){
+    Event getEventsByEventId(@PathVariable Long eventId){
         return eventRepository.findByEventId(eventId);
     }
 

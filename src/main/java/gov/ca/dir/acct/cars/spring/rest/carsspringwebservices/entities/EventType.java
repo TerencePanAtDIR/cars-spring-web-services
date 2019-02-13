@@ -163,4 +163,23 @@ public class EventType {
     public int hashCode() {
         return Objects.hash(eventTypeId, programUnitCode, eventTypeCode, eventTypeName, description, effectiveStartDate, effectiveEndDate, dataSourceCode, createdBy, createdDate, modifiedBy, modifiedDate);
     }
+
+
+    public EventType(){
+
+    }
+    public EventType(Long eventTypeId, String programUnitCode, String eventTypeCode, String eventTypeName, String description, LocalDateTime effectiveStartDate, LocalDateTime effectiveEndDate, String dataSourceCode, String createdBy, LocalDateTime createdDate, String modifiedBy, LocalDateTime modifiedDate) {
+        this.eventTypeId = eventTypeId;
+        this.programUnitCode = programUnitCode;
+        this.eventTypeCode = eventTypeCode;
+        this.eventTypeName = eventTypeName;
+        this.description = description;
+        this.effectiveStartDate = effectiveStartDate;
+        this.effectiveEndDate = effectiveEndDate;
+        this.dataSourceCode = dataSourceCode;
+        this.createdBy = createdBy;
+        this.createdDate = createdDate;
+        this.modifiedBy = modifiedBy;
+        this.modifiedDate = modifiedDate;
+    }
 }

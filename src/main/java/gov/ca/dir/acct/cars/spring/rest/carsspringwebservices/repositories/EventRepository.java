@@ -9,7 +9,7 @@ import java.util.Set;
 public interface EventRepository extends CrudRepository<Event, Long> {
     Event findByCurrentDocument(String currentDocument);
     List<Event> findByRootDocument(String rootDocument);
-    List<Event> findByEventId(Long eventId);
+    Event findByEventId(Long eventId);
     List<Event> findByReferenceDocument(String referenceDocument);
 
 }
